@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Luchá con tus cartas de Yu Gi Oh!"/>
+    <meta name="keywords" content="yu gi oh game card"/>
+    <meta name="author" content="Andy Mancuso"/>
+    <meta name="copyright" content="Mancussi"/>
+    <meta name="robots" content="index"/>
+    
+    <meta property="og:title" content="Yu Gi Oh! Battle Game"/>
+    <meta property="og:description" content="Luchá con tus cartas de Yu Gi Oh!"/>
+    <meta property="og:type" content="yu gi oh game card"/>
+    <meta property="og:image" content="./images/preview.png"/>
+    <meta property="og:url" content="https://reto-04-d93c5.web.app/"/>
+
+    <meta property="twitter:title" content="Yu Gi Oh! Battle Game"/>
+    <meta property="twitter:description" content="Luchá con tus cartas de Yu Gi Oh!"/>
+    <meta property="twitter:type" content="yu gi oh game card"/>
+    <meta property="twitter:image" content="./images/preview.png">
+    <meta property= "twitter:url" content="https://reto-04-d93c5.web.app/"/>
+
+    <title>Yu Gi Oh! Battle Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+    <div class="App">
+        <header>
+            <a href="index.html"><img src="/images/logo.png.png" alt="logo yu gi oh"></a>
+        </header>
+        <main>
+            
+            <section class="section home" id="home">
+
+                <form action="#" id="form">
+                    <label for="player1">
+                        <span>Jugadxr 1
+                        <input type="text" id="player1" placeholder="Ingrese su nombre" required>
+                        </span>
+                    </label>
+                    <label for="player2">
+                        <span>Jugadxr 2
+                        <input type="text" id="player2" placeholder="Ingrese su nombre" required>
+                        </span>
+                    </label>
+                    <button id="jugar">¡Empezár la batalla!</button>
+                </form>
+
+                <div class="partidas-guardadas">
+                    <h2>Partidas Jugadas</h2>
+                        <ul>
+                            <li>partida de pepito</li>
+                        </ul>
+                </div>
+            </section>
+
+            <section class="section animacion display-none" id="animacion">
+                <img src="/images/giphy.gif" alt="gif pantalla carga">
+            </section>
+
+            <section class="section carrousel display-none" id="carrousel">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div id="juegoCarousel" class="carousel carousel slide" data-bs-ride="false">
+                                <div class="carousel-indicators">
+                                  <button type="button" data-bs-target="#juegoCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                  <button type="button" data-bs-target="#juegoCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                  <button type="button" data-bs-target="#juegoCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                  <button type="button" data-bs-target="#juegoCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                  <button type="button" data-bs-target="#juegoCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                  <button type="button" data-bs-target="#juegoCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                </div>
+                                    <div class="btn-container">
+                                        <button class="btn-cerrar" id="btnResultados" data-bs-toggle="modal" data-bs-target="#resultadosModal">X</button>
+                                    </div>
+                                    <div class="hdr-partida">
+                                            <p>Cartas de la batalla:</p>
+                                            <div id="nombreP"></div>
+                                            <!-- <div id="nombreP2" class="display-none"></div> -->
+                                    </div>
+
+                                <div class="carousel-inner" data-="1">
+
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#juegoCarousel" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#juegoCarousel" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="resultadosModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">¡Excelente Batalla!</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" id="btn-resultado" data-bs-dismiss="modal">Ver Resultado</button>
+                            <button type="button" class="btn btn-secondary btn-reiniciar" data-bs-dismiss="modal">Volver a luchar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </section>
+
+
+
+            <section class="section resultado display-none" id="resultado">
+                <div class="col">
+                    <div class="row">
+                      <div class="col d-flex justify-content-center">
+                        <div class="titulos"><h3 id="cartasP1titulo"></h3></div>
+                      </div>
+                    </div>
+                    <div class="row row-cols-3 g-4" id="cartasP1"></div>
+                    <div class="row">
+                        <div class="col d-flex justify-content-center">
+                            <div class="titulos"><h3 id="cartasP2titulo"></h3></div>
+                        </div>
+                      </div>
+                      <div class="row row-cols-3 g-4" id="cartasP2"></div>
+                <!-- <p id="resultadosText"></p>
+                <div id="resultadosInner"></div>
+                <h1 id="matchText">GANADXR:</h1> -->
+                <div class="btns-holder">
+                    <button class="btn-guardar">Guardar</button>
+                    <button class="btn-salir">Salir</button>
+                </div>
+            </section>
+
+            
+
+        </main>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="cards/deck.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

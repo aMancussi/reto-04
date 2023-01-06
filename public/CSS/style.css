@@ -1,0 +1,209 @@
+html, body {
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    /* display: none; */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 90px;
+}
+
+header img {
+    height: 70px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center; */
+}
+
+.App {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url(/images/carts.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* .section {
+    
+} */
+
+.display-none {
+    display: none !important;
+}
+
+/*--------------------HOME--------------------*/
+
+.home {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    align-items: inherit;
+    justify-content: center;
+
+}
+
+.home form {
+    padding: 20px;
+    margin-bottom: 250px;
+    font-size: 20px;
+
+}
+
+.home label{
+    display: block;
+    margin-bottom: 20px;
+}
+
+.home label span {
+    display: block;
+    color: rgb(255, 255, 255);
+    background-color: rgb(179, 22, 22);
+    font-weight: bold;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+    margin-top: 30px;
+    border: 2px solid black;
+}
+
+.home form input {
+    width: 100%;
+    border-radius: 5px;
+    padding: 8px;
+    border: inherit;
+    background-color: #fff;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+.home form input:focus::placeholder {
+    color: transparent;
+}
+
+.home form button {
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgb(179, 22, 22);
+    color: #fff;
+    font-weight: bold;
+    padding: 6px;
+    margin-top: 90px;
+}
+
+.partidas-guardadas {
+    display: none;
+}
+
+/*--------------------ANIMACIÓN--------------------*/
+
+.animacion {
+    display: flex;
+    justify-content: center;
+    min-height: 100%;
+}
+
+.animacion img {
+    width: 100%;
+    margin: 25%;
+    border-radius: 100%;
+}
+
+/*--------------------CAROUSEL--------------------*/
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+}
+.btn-cerrar {
+    border-radius: 30px;
+    width: 50px;
+    background-color: rgb(179, 22, 22);
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.carousel-item{
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-item img{
+    width: 100%;
+    object-fit: cover;
+    margin: 10px 0;
+    
+}
+
+/*--------------------RESULTADOS--------------------*/
+.modal-content{
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: rgb(179, 22, 22);
+}
+
+.modal-footer{
+    display: flex;
+    justify-content: center;
+    color: rgb(179, 22, 22);
+}
+
+.modal-footer button{
+    color: rgb(179, 22, 22);
+    background-color: white;
+    font-weight: bold;
+}
+
+.hdr-partida{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 30px;
+    background-color: rgb(179, 22, 22);
+    border-radius: 20px;
+    margin-top: 15px;
+    margin-bottom: -38px;
+    color: white;
+    width: 100%;
+}
+
+.titulos{
+    margin-top: 100px;
+    margin-bottom: 20px;
+    background-color: rgb(179, 22, 22);
+    text-align: center;
+    color: white;
+    box-shadow: 0 0 0 2px black;
+}
+
+.btns-holder{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.btns-holder button {
+    background-color: rgb(179, 22, 22);
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
